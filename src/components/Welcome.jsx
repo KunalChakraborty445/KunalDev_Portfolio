@@ -20,14 +20,15 @@ const renderText = (text, className, baseWeight = 200) =>{
 };
 
 const setupTextHover = (container, type) =>{
-    if(!container) return;
+    if(!container) return () => {};
 
-    const letters = container.querySelectorAll("span");
+    const letters = gsap.utils.toArray(container.querySelectorAll("span"));
     const { min, max, default: base } = FONT_WEIGHTS[type];
 
     const animateLetter = (letter, weight, duration = 0.25) =>{
         return gsap.to(letter, {
             duration,
+            overwrite: true,
             ease: "power2.out",
             fontVariationSettings: `'wght' ${weight}`,
         });
@@ -89,7 +90,7 @@ const Welcome = () => {
                 400,
             )}</h1>
         <div className="small-screen">
-            <p>This Portfolio is designed for desktop/tabled screens
+            <p>This Portfolio is designed for desktop/tablet screens
             only</p>
         </div>
     </section>
