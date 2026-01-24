@@ -13,6 +13,7 @@ const renderText = (text, className, baseWeight = 200) =>{
             key={i}
             className={className}
             style={{fontVariationSettings: `'wght' ${baseWeight}`,}}
+            aria-hidden="true"
         >
             {char === " " ? '\u00A0' : char}
         </span>
@@ -76,14 +77,14 @@ const Welcome = () => {
     }, []);
 
     return <section id="welcome">
-        <p ref={subtitleRef}>
+            <p ref={subtitleRef} aria-label="Hey, I'm Kunal! Welcome to my">
             {renderText(
                 "Hey, I'm Kunal! Welcome to my",
             "text-3xl font-georama",
                 100,
             )}
-        </p>
-        <h1 ref={titleRef} className="mt-7">{
+            </p>
+        <h1 ref={titleRef} className="mt-7" aria-label="portfolio">{
             renderText(
                 "portfolio",
                 "text-9xl italic font-georama",
