@@ -9,7 +9,7 @@ export default defineConfig({
   plugins: [react(), tailwindcss()],
   resolve: {
     alias: {
-      "#componets": resolve(
+      "#components": resolve(
           dirname(fileURLToPath(import.meta.url)),
           'src/components'
       ),
