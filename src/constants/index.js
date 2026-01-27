@@ -77,25 +77,25 @@ const dockApps = [
 const blogPosts = [
     {
         id: 1,
-        date: "Sep 2, 2025",
+        date: "Dec 23, 2025",
         title:
-            "TypeScript Explained: What It Is, Why It Matters, and How to Master It",
+            "Building an Emotion-Based Music Recommendation System: When AI Meets Your Mood",
         image: "/images/blog1.png",
-        link: "https://jsmastery.com/blog/typescript-explained-what-it-is-why-it-matters-and-how-to-master-it",
+        link: "https://dev.to/kunal_chakraborty_6a1ab69/-building-an-emotion-based-music-recommendation-system-when-ai-meets-your-mood-1ce3",
     },
     {
         id: 2,
         date: "Aug 28, 2025",
-        title: "The Ultimate Guide to Mastering Three.js for 3D Development",
+        title: "Building a Full-Stack Job Portal: From MVP to Production-Ready Platform",
         image: "/images/blog2.png",
-        link: "https://jsmastery.com/blog/the-ultimate-guide-to-mastering-three-js-for-3d-development",
+        link: "https://dev.to/kunal_chakraborty_6a1ab69/building-a-full-stack-job-portal-from-mvp-to-production-ready-platform-24f4",
     },
     {
         id: 3,
-        date: "Aug 15, 2025",
-        title: "The Ultimate Guide to Mastering GSAP Animations",
+        date: "Jan 15, 2026",
+        title: "Building a macOS-Inspired Portfolio: A Journey Through React, GSAP",
         image: "/images/blog3.png",
-        link: "https://jsmastery.com/blog/the-ultimate-guide-to-mastering-gsap-animations",
+        link: "https://dev.to/kunal_chakraborty_6a1ab69/building-a-macos-inspired-portfolio-a-journey-through-react-gsap-2l41-temp-slug-1489128?preview=cacca8f7b4d73ce96791943a776637a0efe44ca0bd0110b726c20af45a2e7b635e35c51f4a8f58199eb43fc5591b9e9d4a339d587470a850eae1586c",
     },
 ];
 
@@ -130,30 +130,30 @@ const socials = [
     {
         id: 1,
         text: "Github",
-        icon: "/icons/github.svg",
-        bg: "#f4656b",
-        link: "https://github.com/JavaScript-Mastery-Pro",
+        icon: "/icons/github2.svg",
+        bg: "#131c3b",
+        link: "https://github.com/KunalChakraborty445",
     },
     {
         id: 2,
-        text: "Platform",
-        icon: "/icons/atom.svg",
-        bg: "#4bcb63",
+        text: "Instagram",
+        icon: "/icons/insta.svg",
+        bg: "#b6178e",
         link: "https://jsmastery.com/",
     },
     {
         id: 3,
         text: "Twitter/X",
         icon: "/icons/twitter.svg",
-        bg: "#ff866b",
+        bg: "#070302",
         link: "https://x.com/jsmasterypro",
     },
     {
         id: 4,
         text: "LinkedIn",
         icon: "/icons/linkedin.svg",
-        bg: "#05b6f6",
-        link: "https://www.linkedin.com/company/javascriptmastery/posts/?feedView=all",
+        bg: "#056df6",
+        link: "https://www.linkedin.com/in/kunal-chakraborty-32274534b",
     },
 ];
 
@@ -225,7 +225,7 @@ const WORK_LOCATION = {
         // ▶ Project 1
         {
             id: 5,
-            name: "Nike Ecommerce Website Application",
+            name: "Job Portal Application",
             icon: "/images/folder.png",
             kind: "folder",
             position: "top-10 left-5", // icon position inside Finder
@@ -233,30 +233,30 @@ const WORK_LOCATION = {
             children: [
                 {
                     id: 1,
-                    name: "Nike Project.txt",
+                    name: "InsiderJob Project.txt",
                     icon: "/images/txt.png",
                     kind: "file",
                     fileType: "txt",
                     position: "top-5 left-10",
                     description: [
-                        "The Nike eCommerce website is a sleek and modern platform designed for shopping the latest Nike collections.",
-                        "Instead of a simple online store, it delivers an immersive experience with bold visuals, interactive product displays, and smooth navigation.",
-                        "Think of it like walking into a flagship Nike store—but right from your phone or laptop.",
-                        "It's built with Next.js and Tailwind, ensuring fast performance, responsive design, and a clean, premium look.",
+                        "The Job Portal Application website is a clean and intuitive platform designed to connect job seekers with the right opportunities.",
+                        "Instead of a basic listing site, it offers a smart experience with advanced filters, real-time updates, and a smooth application process.",
+                        "Think of it like having a career assistant that helps you find and apply for jobs effortlessly—from any device.",
+                        "It's built with React.js and Tailwind, ensuring fast performance, responsive design, and a modern, professional look."
                     ],
                 },
                 {
                     id: 2,
-                    name: "nike.com",
+                    name: "InsiderJob.in",
                     icon: "/images/safari.png",
                     kind: "file",
                     fileType: "url",
-                    href: "https://youtu.be/fZdTYswuZjU?si=Awjl-pIst9e09_UU",
+                    href: "https://job-portal-full-stack-client-wine.vercel.app",
                     position: "top-10 right-20",
                 },
                 {
                     id: 4,
-                    name: "nike.png",
+                    name: "InsiderJob.png",
                     icon: "/images/image.png",
                     kind: "file",
                     fileType: "img",
@@ -278,7 +278,7 @@ const WORK_LOCATION = {
         // ▶ Project 2
         {
             id: 6,
-            name: "AI Resume Analyzer",
+            name: "VibeChat Real time chat app",
             icon: "/images/folder.png",
             kind: "folder",
             position: "top-52 right-80",
@@ -286,30 +286,29 @@ const WORK_LOCATION = {
             children: [
                 {
                     id: 1,
-                    name: "AI Resume Analyzer Project.txt",
+                    name: "VibeChat Project.txt",
                     icon: "/images/txt.png",
                     kind: "file",
                     fileType: "txt",
                     position: "top-5 right-10",
                     description: [
-                        "AI Resume Analyzer is a smart tool that helps you perfect your resume with instant feedback.",
-                        "Instead of guessing what recruiters want, you get AI-powered insights on keywords, formatting, and overall impact.",
-                        "Think of it like having a career coach—pointing out strengths, fixing weaknesses, and boosting your chances of landing interviews.",
-                        "It's built with Next.js and Tailwind, so it runs fast, looks professional, and works seamlessly on any device.",
+                        "Vibe Chat is a real-time communication platform designed for low-latency messaging and seamless state synchronization.",
+                        "The core engine uses WebSockets (Socket.io) to manage bi-directional data flow, ensuring that messages, 'typing' indicators, and online statuses are updated instantly across all connected clients.",
+                        "I implemented a robust Event-Driven Architecture on the backend to handle message persistence and room-based scaling, ensuring a smooth experience even as the number of concurrent 'vibes' grows."
                     ],
                 },
                 {
                     id: 2,
-                    name: "ai-resume-analyzer.com",
+                    name: "VibeChat",
                     icon: "/images/safari.png",
                     kind: "file",
                     fileType: "url",
-                    href: "https://youtu.be/iYOz165wGkQ?si=R1hs8Legl200m0Cl",
+                    href: "https://fullstack-chat-app-5-2v1d.onrender.com/",
                     position: "top-20 left-20",
                 },
                 {
                     id: 4,
-                    name: "ai-resume-analyzer.png",
+                    name: "VibeChat.png",
                     icon: "/images/image.png",
                     kind: "file",
                     fileType: "img",
@@ -331,7 +330,7 @@ const WORK_LOCATION = {
         // ▶ Project 3
         {
             id: 7,
-            name: "Food Delivery App",
+            name: "EmoBeats App",
             icon: "/images/folder.png",
             kind: "folder",
             position: "top-10 left-80",
@@ -339,21 +338,24 @@ const WORK_LOCATION = {
             children: [
                 {
                     id: 1,
-                    name: "Food Delivery App Project.txt",
+                    name: "Emotion Based Music Recommendation Project.txt",
                     icon: "/images/txt.png",
                     kind: "file",
                     fileType: "txt",
                     position: "top-5 left-10",
                     description: [
-                        "Our Food Delivery App is a fast and convenient way to order meals from your favorite restaurants.",
-                        "Instead of making calls or waiting in line, you can browse menus, customize orders, and track deliveries in real time.",
-                        "Think of it like having your favorite restaurants in your pocket—ready to deliver anytime, anywhere.",
-                        "It’s built with React Native, so it works smoothly on both iOS and Android with a clean, modern design.",
+                        "Our Emotion-Based Music App is an intuitive way to sync your digital library with your current headspace.",
+                        "Instead of endlessly scrolling through playlists, the system uses Machine Learning to analyze your mood and instantly" +
+                        " curate the perfect soundtrack via the Spotify API.",
+                        "Think of it like a personal DJ that understands how you feel—selecting the right beats for your high moments" +
+                        " and the perfect melodies for your low ones.",
+                        "It’s powered by a robust Python Flask backend and ML models, ensuring fast," +
+                        " intelligent recommendations wrapped in a sleek, responsive interface."
                     ],
                 },
                 {
                     id: 2,
-                    name: "food-delivery-app.com",
+                    name: "EmoBeats.com",
                     icon: "/images/safari.png",
                     kind: "file",
                     fileType: "url",
@@ -397,7 +399,7 @@ const ABOUT_LOCATION = {
             kind: "file",
             fileType: "img",
             position: "top-10 left-5",
-            imageUrl: "/images/adrian.jpg",
+            imageUrl: "/images/kunal-6.jpg",
         },
         {
             id: 2,
@@ -406,16 +408,16 @@ const ABOUT_LOCATION = {
             kind: "file",
             fileType: "img",
             position: "top-28 right-72",
-            imageUrl: "/images/adrian-2.jpg",
+            imageUrl: "/images/kunal-2.jpg",
         },
         {
             id: 3,
-            name: "conference-me.png",
+            name: "holiday-me.png",
             icon: "/images/image.png",
             kind: "file",
             fileType: "img",
             position: "top-52 left-80",
-            imageUrl: "/images/adrian-3.jpeg",
+            imageUrl: "/images/kunal-5.jpg",
         },
         {
             id: 4,
@@ -425,12 +427,11 @@ const ABOUT_LOCATION = {
             fileType: "txt",
             position: "top-60 left-5",
             subtitle: "Meet the Developer Behind the Code",
-            image: "/images/adrian.jpg",
+            image: "/images/kunal.jpg",
             description: [
-                "Hey! I’m Adrian 👋, a web developer who enjoys building sleek, interactive websites that actually work well.",
-                "I specialize in JavaScript, React, and Next.js—and I love making things feel smooth, fast, and just a little bit delightful.",
-                "I’m big on clean UI, good UX, and writing code that doesn’t need a search party to debug.",
-                "Outside of dev work, you'll find me tweaking layouts at 2AM, sipping overpriced coffee, or impulse-buying gadgets I absolutely convinced myself I needed 😅",
+                "Hey! I’m Kunal 👋, a Backend-focused Software Developer who builds robust systems and high-performance APIs that power seamless user experiences.",
+                "I specialize in Node.js, Express, and TypeScript, with a deep interest in Database Design (SQL/NoSQL) and System Architecture. I love making things fast, secure, and—most importantly—scalable.",
+                "When I'm not optimizing queries, I’m learning Japanese, sipping overpriced coffee, or impulse-buying gadgets that I’ve technically convinced myself are 'essential hardware research' 😅"
             ],
         },
     ],
@@ -504,3 +505,11 @@ const WINDOW_CONFIG = {
 };
 
 export { INITIAL_Z_INDEX, WINDOW_CONFIG };
+
+
+export const skillsData = [
+    { id: "java", name: "Java", icon: "/icons/java.svg" },
+    { id: "react", name: "React", icon: "/icons/react.svg" },
+    { id: "node", name: "Node.js", icon: "/icons/nodejs.svg" },
+    { id: "mongodb", name: "MongoDb", icon: "/icons/dbmongo.svg" },
+];

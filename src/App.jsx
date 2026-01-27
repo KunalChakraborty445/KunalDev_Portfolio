@@ -1,19 +1,35 @@
-import React from 'react'
+import React, {useState} from 'react'
 import { Navbar, Welcome, Dock } from "#components"
+import Splash from "#components/Splash.jsx";
 import gsap from "gsap"
 import {Draggable} from "gsap/Draggable"
-import {Terminal} from "#windows";
+import {Terminal, Safari, Resume, Finder, Text, Image, Contact} from "#windows";
+
 
 gsap.registerPlugin(Draggable)
 const App = () => {
-    return (
-        <main>
-            <Navbar />
-            <Welcome />
-            <Dock />
 
-            <Terminal />
-        </main>
+    const [showSplash, setShowSplash] = useState(true);
+
+    return (
+        <>
+            {showSplash && <Splash onFinish={() => setShowSplash(false)} />}
+                <div className={showSplash ? "hidden" : ""}>
+                    <main>
+                        <Navbar />
+                        <Welcome />
+                        <Dock />
+
+                        <Terminal />
+                        <Safari />
+                        <Resume />
+                        <Finder />
+                        <Text />
+                        <Image />
+                        <Contact />
+                    </main>
+                </div>
+        </>
     )
 }
 export default App
