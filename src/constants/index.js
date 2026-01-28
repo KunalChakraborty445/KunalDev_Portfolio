@@ -188,11 +188,11 @@ const photosLinks = [
 const gallery = [
     {
         id: 1,
-        img: "/images/gal1.png",
+        img: "/images/gal1.jpg",
     },
     {
         id: 2,
-        img: "/images/gal2.png",
+        img: "/images/gal2.jpg",
     },
     {
         id: 3,
@@ -200,7 +200,7 @@ const gallery = [
     },
     {
         id: 4,
-        img: "/images/gal4.png",
+        img: "/images/gal4.jpg",
     },
 ];
 

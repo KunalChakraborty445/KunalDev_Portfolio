@@ -1,29 +1,54 @@
-import React, { useState } from 'react'
+import React, {useRef, useState} from 'react'
 import WindowWrapper from "#hoc/WindowWrapper.jsx";
 import {WindowControls} from "#components";
 import {socials} from "#constants/index.js";
+import emailjs from "@emailjs/browser";
+
 
 const Contact = () => {
+    const formRef = useRef(null);
     const [openSend, setOpenSend] = useState(false);
-    const [formData, setFormData] = useState({ name: '', email: '', message: '' });
+    const [formData, setFormData] = useState(
+        {
+                name: '',
+                email: '',
+                message: ''
+        });
     const [showSuccess, setShowSuccess] = useState(false);
     const [isSubmitting, setIsSubmitting] = useState(false);
 
     const handleInputChange = (e) => {
         const { name, value } = e.target;
-        setFormData({ ...formData, [name]: value });
+        setFormData(
+            { ...formData,
+                [name]: value
+            });
     };
 
     const handleSubmit = async (e) => {
         e.preventDefault();
+
         setIsSubmitting(true);
-        setTimeout(() => {
-            console.log('Form submitted:', formData);
+        try{
+            await emailjs.sendForm(
+                import.meta.env.VITE_APP_EMAILJS_SERVICE_ID,
+                import.meta.env.VITE_APP_EMAILJS_TEMPLATE_ID,
+                formRef.current,
+                import.meta.env.VITE_APP_EMAILJS_PUBLIC_KEY,
+            )
             setShowSuccess(true);
-            setIsSubmitting(false);
+            setFormData(
+                { name: '',
+                        email: '',
+                        message: ''
+                    });
+            formRef.current.reset();
             setTimeout(() => setShowSuccess(false), 3000);
-            setFormData({ name: '', email: '', message: '' });
-        }, 1500);
+        }catch(e){
+            console.error('Email sending error:', e);
+        }finally {
+            setIsSubmitting(false);
+        }
     };
 
     return (
@@ -47,7 +72,12 @@ const Contact = () => {
                     </div>
                 </div>
 
-                <form onSubmit={handleSubmit} className="space-y-5 bg-white p-6 rounded-lg shadow-md border border-gray-200">
+                <form
+                    onSubmit={handleSubmit}
+                    className="space-y-5 bg-white p-6 rounded-lg shadow-md border
+                     border-gray-200"
+                    ref={formRef}
+                    >
                     <div className="relative">
                         <label htmlFor="name" className="block text-sm font-medium text-gray-700
                          mb-1 cursor-pointer flex items-center">

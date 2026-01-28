@@ -122,7 +122,10 @@ const Splash = ({ onFinish }) => {
                                 className="w-24 h-24 rounded-full border-4 border-white object-cover shadow-lg"
                             />
 
-                            <div className="text-white text-2xl font-semibold">Kunal Chakraborty</div>
+                            <div
+                                className="text-white text-2xl font-semibold">Kunal Chakraborty
+                                <p className="text-gray-600 text-sm">Press to continue</p>
+                            </div>
                         </button>
                     )}
                 </div>
