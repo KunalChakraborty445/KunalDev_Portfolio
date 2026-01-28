@@ -4,6 +4,7 @@ import Splash from "#components/Splash.jsx";
 import gsap from "gsap"
 import {Draggable} from "gsap/Draggable"
 import {Terminal, Safari, Resume, Finder, Text, Image, Contact} from "#windows";
+import {Home} from "#components/index.js";
 
 
 gsap.registerPlugin(Draggable)
@@ -27,6 +28,8 @@ const App = () => {
                         <Text />
                         <Image />
                         <Contact />
+
+                        <Home />
                     </main>
                 </div>
         </>

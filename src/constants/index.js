@@ -228,8 +228,8 @@ const WORK_LOCATION = {
             name: "Job Portal Application",
             icon: "/images/folder.png",
             kind: "folder",
-            position: "top-10 left-5", // icon position inside Finder
-            windowPosition: "top-[5vh] left-5", // optional: Finder window position
+            position: "top-10 left-5",
+            windowPosition: "top-[21vh] left-[15vh]",
             children: [
                 {
                     id: 1,
@@ -282,7 +282,7 @@ const WORK_LOCATION = {
             icon: "/images/folder.png",
             kind: "folder",
             position: "top-52 right-80",
-            windowPosition: "top-[20vh] left-7",
+            windowPosition: "top-[17vh] right-[35vh]",
             children: [
                 {
                     id: 1,
@@ -303,7 +303,7 @@ const WORK_LOCATION = {
                     icon: "/images/safari.png",
                     kind: "file",
                     fileType: "url",
-                    href: "https://fullstack-chat-app-5-2v1d.onrender.com/",
+                    href: "https://fullstack-chat-app-5-2v1d.onrender.com",
                     position: "top-20 left-20",
                 },
                 {
@@ -334,7 +334,7 @@ const WORK_LOCATION = {
             icon: "/images/folder.png",
             kind: "folder",
             position: "top-10 left-80",
-            windowPosition: "top-[33vh] left-7",
+            windowPosition: "top-[63vh] left-[47vh]",
             children: [
                 {
                     id: 1,
@@ -359,7 +359,7 @@ const WORK_LOCATION = {
                     icon: "/images/safari.png",
                     kind: "file",
                     fileType: "url",
-                    href: "https://youtu.be/LKrX390fJMw?si=cExkuVhf2DTV9G2-",
+                    href: "",
                     position: "top-10 right-20",
                 },
                 {
@@ -450,8 +450,6 @@ const RESUME_LOCATION = {
             icon: "/images/pdf.png",
             kind: "file",
             fileType: "pdf",
-            // you can add `href` if you want to open a hosted resume
-            // href: "/your/resume/path.pdf",
         },
     ],
 };
