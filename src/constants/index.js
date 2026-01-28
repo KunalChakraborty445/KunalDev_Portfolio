@@ -136,10 +136,10 @@ const socials = [
     },
     {
         id: 2,
-        text: "Instagram",
-        icon: "/icons/insta.svg",
-        bg: "#b6178e",
-        link: "https://jsmastery.com/",
+        text: "Blog",
+        icon: "/icons/blog.svg",
+        bg: "#ab6e1a",
+        link: "https://dev.to/kunal_chakraborty_6a1ab69",
     },
     {
         id: 3,
@@ -427,7 +427,7 @@ const ABOUT_LOCATION = {
             fileType: "txt",
             position: "top-60 left-5",
             subtitle: "Meet the Developer Behind the Code",
-            image: "/images/kunal.jpg",
+            image: "/images/aboutKunal.jpg",
             description: [
                 "Hey! I’m Kunal 👋, a Backend-focused Software Developer who builds robust systems and high-performance APIs that power seamless user experiences.",
                 "I specialize in Node.js, Express, and TypeScript, with a deep interest in Database Design (SQL/NoSQL) and System Architecture. I love making things fast, secure, and—most importantly—scalable.",

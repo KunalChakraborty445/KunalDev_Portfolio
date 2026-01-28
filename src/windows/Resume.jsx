@@ -7,7 +7,6 @@ import { Document, Page, pdfjs } from 'react-pdf';
 import 'react-pdf/dist/Page/AnnotationLayer.css';
 import 'react-pdf/dist/Page/TextLayer.css';
 
-// Set up PDF.js worker (ensure pdfjs-dist is installed)
 pdfjs.GlobalWorkerOptions.workerSrc = new URL(
     'pdfjs-dist/build/pdf.worker.min.mjs',
     import.meta.url,
@@ -18,18 +17,25 @@ const Resume = () => {
     const [pageNumber, setPageNumber] = useState(1);
     const [loading, setLoading] = useState(true);
     const [error, setError] = useState(null);
+    const [reloadKey, setReloadKey] = useState(0);
 
-    // Callback when PDF loads successfully
     const onDocumentLoadSuccess = ({ numPages }) => {
         setNumPages(numPages);
         setLoading(false);
     };
 
-    // Callback for load errors
     const onDocumentLoadError = (error) => {
         console.error('Error loading PDF:', error);
         setError('Failed to load PDF. Check the file path and console for details.');
         setLoading(false);
+    };
+
+    const handleReload = () => {
+        setLoading(true);
+        setError(null);
+        setNumPages(null);
+        setPageNumber(1);
+        setReloadKey(prev => prev + 1);
     };
 
     return (
@@ -48,10 +54,16 @@ const Resume = () => {
             </div>
 
             {loading && <p>Loading PDF...</p>}
-            {error && <p style={{ color: 'red' }}>{error}</p>}
+            {error && (
+                <div>
+                    <p style={{ color: 'red' }}>{error}</p>
+                    <button onClick={handleReload}>Reload PDF</button>
+                </div>
+            )}
 
             <Document
-                file="/files/KunalResume8.pdf"  // Updated path and file name
+                key={reloadKey}
+                file="/files/KunalResume8.pdf"
                 onLoadSuccess={onDocumentLoadSuccess}
                 onLoadError={onDocumentLoadError}
             >
@@ -61,25 +73,6 @@ const Resume = () => {
                     renderAnnotationLayer
                 />
             </Document>
-
-
-            {numPages && (
-                <div>
-                    <p>Page {pageNumber} of {numPages}</p>
-                    <button
-                        disabled={pageNumber <= 1}
-                        onClick={() => setPageNumber(pageNumber - 1)}
-                    >
-                        Previous
-                    </button>
-                    <button
-                        disabled={pageNumber >= numPages}
-                        onClick={() => setPageNumber(pageNumber + 1)}
-                    >
-                        Next
-                    </button>
-                </div>
-            )}
         </>
     );
 };
