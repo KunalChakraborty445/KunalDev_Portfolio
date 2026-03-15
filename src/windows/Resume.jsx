@@ -44,7 +44,7 @@ const Resume = () => {
                 <WindowControls target="resume" />
                 <h2>Resume.pdf</h2>
                 <a
-                    href="/files/KunalResume8.pdf"
+                    href="/files/KunalResume.pdf"
                     download
                     className="cursor-pointer"
                     title="Download resume"
@@ -63,7 +63,7 @@ const Resume = () => {
 
             <Document
                 key={reloadKey}
-                file="/files/KunalResume8.pdf"
+                file="/files/KunalResume.pdf"
                 onLoadSuccess={onDocumentLoadSuccess}
                 onLoadError={onDocumentLoadError}
             >
