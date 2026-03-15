@@ -507,7 +507,9 @@ export { INITIAL_Z_INDEX, WINDOW_CONFIG };
 
 export const skillsData = [
     { id: "java", name: "Java", icon: "/icons/java.svg" },
+    { id: "javascript", name: "JavaScript", icon: "/icons/javascript.svg" },
     { id: "react", name: "React", icon: "/icons/react.svg" },
     { id: "node", name: "Node.js", icon: "/icons/nodejs.svg" },
     { id: "mongodb", name: "MongoDb", icon: "/icons/dbmongo.svg" },
+    { id: "git", name: "Git", icon: "/icons/git.svg" },
 ];
